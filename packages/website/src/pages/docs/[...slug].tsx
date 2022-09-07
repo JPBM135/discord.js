@@ -20,6 +20,7 @@ import type { GetStaticPaths, GetStaticProps } from 'next/types';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import { useMemo } from 'react';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeIgnore from 'rehype-ignore';
 import rehypePrettyCode, { type Options } from 'rehype-pretty-code';
 import rehypeRaw from 'rehype-raw';
@@ -147,6 +148,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 					rehypeRaw,
 					rehypeIgnore,
 					rehypeSlug,
+					rehypeAutolinkHeadings,
 					[
 						rehypePrettyCode,
 						{

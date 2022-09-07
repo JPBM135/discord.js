@@ -25,14 +25,11 @@ export default function IndexRoute() {
 								Docs
 							</a>
 						</Link>
-						<a
-							className="dark:bg-dark-400 dark:border-dark-100 dark:hover:bg-dark-300 dark:active:bg-dark-200 border-light-900 hover:bg-light-200 active:bg-light-300 focus:ring-blurple focus:ring-width-2 flex h-11 transform-gpu cursor-pointer select-none appearance-none place-items-center gap-2 rounded border bg-transparent px-4 text-base font-semibold leading-none text-black no-underline outline-0 focus:ring active:translate-y-px dark:text-white"
-							href="https://discordjs.guide"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Guide <FiExternalLink />
-						</a>
+						<Link href="/guide" prefetch={false}>
+							<a className="dark:bg-dark-400 dark:border-dark-100 dark:hover:bg-dark-300 dark:active:bg-dark-200 border-light-900 hover:bg-light-200 active:bg-light-300 focus:ring-blurple focus:ring-width-2 flex h-11 transform-gpu cursor-pointer select-none appearance-none place-items-center gap-2 rounded border bg-transparent px-4 text-base font-semibold leading-none text-black no-underline outline-0 focus:ring active:translate-y-px dark:text-white">
+								Guide
+							</a>
+						</Link>
 						<a
 							className="dark:bg-dark-400 dark:border-dark-100 dark:hover:bg-dark-300 dark:active:bg-dark-200 border-light-900 hover:bg-light-200 active:bg-light-300 focus:ring-blurple focus:ring-width-2 flex h-11 transform-gpu cursor-pointer select-none appearance-none appearance-none place-items-center gap-2 rounded border bg-transparent px-4 text-base font-semibold leading-none text-black no-underline outline-0 focus:ring active:translate-y-px dark:text-white"
 							href="https://github.com/discordjs/discord.js"

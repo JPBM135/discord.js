@@ -6,6 +6,7 @@ import '@unocss/reset/tailwind.css';
 import '../styles/unocss.css';
 import '../styles/cmdk.css';
 import '../styles/main.css';
+import '@code-hike/mdx/dist/index.css';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 	return (
